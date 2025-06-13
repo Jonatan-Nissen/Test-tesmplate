@@ -4,12 +4,6 @@ about: Use this template for feed-related issues (Schedule, Streaming, VOD, etc.
 title: "(feed fix) <feed name> <feed version/s> - <kind of feed> - <issue summary>"
 ---
 
-## TITLE
-
-`(feed fix) <feed name> <feed version/s> - <kind of feed> - <issue summary>`
-
----
-
 ## DESCRIPTION
 
 <Ticket description here>
