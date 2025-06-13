@@ -1,0 +1,51 @@
+name: Feed Issue
+description: Template for raising issues related to feeds (Schedule, Schedules, Streaming, VOD, etc.)
+title: "(feed fix) <feed name> <feed version/s> - <kind of feed> - <issue summary>"
+body:
+  - type: input
+    id: kind-of-feed
+    attributes:
+      label: Kind of Feed
+      description: Specify the kind of feed (e.g., Schedule, Schedules, Streaming, VOD, etc.)
+      placeholder: e.g., Streaming
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue in detail. What’s the context, what needs to be fixed?
+      placeholder: >-
+        Describe the background and what is wrong with the feed or program data.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sample-feed
+    attributes:
+      label: Sample Feed
+      description: Provide extracts of the current and expected feed, with comments explaining the issue.
+      placeholder: |-
+        - current:
+          ```
+          <feed extract with inline comments about what is wrong>
+          ```
+        - expected:
+          ```
+          <feed extract with inline comments about what it should look like>
+          ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Provide relevant links for context and verification.
+      placeholder: |-
+        - link to feed: https://... (include full parameters for exact replication)
+        - link to program: https://... (editorial, listing, streaming page)
+        - other links: https://... (e.g., customer account if relevant)
+    validations:
+      required: false
